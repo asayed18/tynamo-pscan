@@ -1,0 +1,46 @@
+{
+    "name": "tynamo-pscan",
+    "version": "0.0.1",
+    "description": "Scan large DynamoDB tables faster in parallel",
+    "type": "module",
+    "author": "Ahmed Abdelsalam <engahmedabdelsalam918@gmail.com>",
+    "homepage": "https://github.com/ahmed-abdelsalam/tynamo-pscan/#readme",
+    "keywords": [
+        "aws",
+        "dynamodb",
+        "parallel-scan",
+        "optimization"
+    ],
+    "repository": "asalam/tynamo-pscan",
+    "publishConfig": {
+        "access": "public"
+    },
+    "license": "MIT",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+        "build": "tsup src/index.ts --clean --minify --dts",
+        "demo": "tsup demo/start.ts --clean --minify --dts; AWS_REGION=eu-west-1 node --experimental-modules dist/start.cjs"
+    },
+    "dependencies": {
+        "@aws-sdk/client-dynamodb": "3.x.x",
+        "@aws-sdk/lib-dynamodb": "3.x.x",
+        "@shelf/dynamodb-parallel-scan": "^3.7.0",
+        "@smithy/node-http-handler": "^2.3.1"
+    },
+    "devDependencies": {
+        "@shelf/jest-dynamodb": "^3.4.4",
+        "@types/node": "^20.11.19",
+        "@zerollup/ts-transform-paths": "^1.7.18",
+        "prettier": "2.8.8",
+        "tsup": "^8.0.1",
+        "typescript": "5.1.6"
+    },
+    "peerDependencies": {
+        "@aws-sdk/client-dynamodb": "3.x.x",
+        "@aws-sdk/lib-dynamodb": "3.x.x"
+    },
+    "engines": {
+        "node": ">=16"
+    }
+}

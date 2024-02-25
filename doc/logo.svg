@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <!-- Inner Shadow -->
+  <defs>
+    <filter id="inner-shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset in="SourceAlpha" dx="-5" dy="11" result="offset"></feOffset>
+      <feGaussianBlur in="offset" stdDeviation="3" result="blur"></feGaussianBlur>
+      <feComposite in="SourceGraphic" in2="blur" operator="out" result="composite"></feComposite>
+      <feBlend in="SourceGraphic" in2="composite" mode="multiply"></feBlend>
+    </filter>
+  </defs>
+  
+  <!-- AWS Speedometer -->
+  <circle cx="400" cy="400" r="380" fill="#FF9900" filter="url(#inner-shadow)"></circle>
+  <circle cx="400" cy="400" r="300" fill="#FFF" filter="url(#inner-shadow)"></circle>
+  <circle cx="400" cy="400" r="250" fill="#FF9900" filter="url(#inner-shadow)"></circle>
+
+  <!-- Unit Measurements -->
+  <g transform="rotate(30 800 800)">
+    <text x="0" y="-220" font-size="20" text-anchor="middle" fill="#FFF">10 cm</text>
+    <text x="0" y="-260" font-size="20" text-anchor="middle" fill="#FFF">20 cm</text>
+    <text x="0" y="-300" font-size="20" text-anchor="middle" fill="#FFF">30 cm</text>
+  </g>
+
+  <!-- Lightning Symbol -->
+  <g transform="rotate(30 400 400)">
+    <path d="M400 200l-50 200h100l-50 200" fill="#FFF" filter="url(#inner-shadow)">
+      <animate attributeName="d" attributeType="XML" dur="0.5s" repeatCount="indefinite" values="M400 200l-50 200h100l-50 200;M400 200l-49 199h98l-49 201;M400 200l-48 198h96l-48 202;M400 200l-47 197h94l-47 203;M400 200l-46 196h92l-46 204;M400 200l-45 195h90l-45 205;M400 200l-44 194h88l-44 206" />
+    </path>
+    <circle cx="400" cy="200" r="15" fill="#FFF"></circle>
+    <circle cx="400" cy="600" r="15" fill="#FFF"></circle>
+  </g>
+
+  <!-- Reading Markings -->
+  <circle cx="400" cy="400" r="340" fill="none" stroke="#FFF" stroke-dasharray="1,15" stroke-width="70">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 400 400" to="360 400 400" dur="5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="400" cy="400" r="356" fill="none" stroke="#FFF" stroke-dasharray="5,40" stroke-width="30">
+    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 400 400" to="360 400 400" dur="5s" repeatCount="indefinite" />
+  </circle>
+</svg> 
