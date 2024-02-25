@@ -1,0 +1,37 @@
+name: Testing
+
+on: [push]
+
+permissions:
+  contents: read
+  id-token: write
+  actions: read
+
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+          registry-url: 'https://npm.pkg.github.com'
+
+      - name: npm install
+        run: npm install
+
+      - name: Linting
+        run: npm run lint
+       
+  build:
+    needs: [testing]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Job for branch status check
+        run: echo Build complete

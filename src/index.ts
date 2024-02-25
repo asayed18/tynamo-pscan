@@ -1,5 +1,5 @@
-import Scanner from './scanner';
+import Scanner from './scanner'
 
-export * from '_@/types';
-export * from '_@/log';
-export default Scanner;
+export * from '_@/log'
+export * from '_@/types'
+export default Scanner

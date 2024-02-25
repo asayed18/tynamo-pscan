@@ -1,2 +1,4 @@
-export { default as Logger } from './Logger';
-export { ConsoleColors } from './constants';
+import Logger from './Logger'
+
+export { Logger }
+export { ConsoleColors } from './constants'

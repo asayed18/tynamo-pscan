@@ -1,4 +1,4 @@
-import { DynamoDB } from "@aws-sdk/client-dynamodb";
+import { DynamoDB } from '@aws-sdk/client-dynamodb'
 
 export interface ScannerConstructor {
     client: DynamoDB;
