@@ -1,5 +1,13 @@
 # tynamo-pscan
 
+## 0.1.1
+
+### Patch Changes
+
+- auto npm release
+- Updated dependencies
+  - tynamo-pscan@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
     "name": "tynamo-pscan",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Scan large DynamoDB tables faster in parallel",
     "author": "Ahmed Abdelsalam <engahmedabdelsalam918@gmail.com>",
     "homepage": "https://github.com/ahmed-abdelsalam/tynamo-pscan/#readme",
@@ -21,6 +21,7 @@
         "lint": "eslint ./src",
         "lint:fix": "eslint --fix ./src",
         "build": "tsup src/index.ts --clean --dts",
+        "release": "npm run build; npm publish",
         "demo": "ts-node demo/start.ts"
     },
     "dependencies": {
@@ -30,7 +31,7 @@
         "@shelf/dynamodb-parallel-scan": "^3.7.0",
         "@smithy/node-http-handler": "^2.3.1",
         "ts-node": "^10.9.2",
-        "tynamo-pscan": "^0.1.0"
+        "tynamo-pscan": "^0.1.1"
     },
     "devDependencies": {
         "@changesets/cli": "^2.27.1",
