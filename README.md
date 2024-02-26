@@ -27,7 +27,7 @@ With Tynamo Pscan, you can easily scan large tables by specifying the desired sc
 
 ## Installation
 ```sh
-$ npm install @asalam-pscan
+$ npm install tynamo-pscan
 ```
 
 ## Usage
@@ -36,7 +36,7 @@ $ npm install @asalam-pscan
 ### Using yield 
 
 ```typescript
-import Scanner from '@asalam/tynamo-pscan'
+import Scanner from 'tynamo-pscan'
 
 
 const scanner = new Scanner({
