@@ -1,6 +1,6 @@
 {
     "name": "tynamo-pscan",
-    "version": "0.1.1",
+    "version": "0.1.0",
     "description": "Scan large DynamoDB tables faster in parallel",
     "author": "Ahmed Abdelsalam <engahmedabdelsalam918@gmail.com>",
     "homepage": "https://github.com/ahmed-abdelsalam/tynamo-pscan/#readme",
