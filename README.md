@@ -96,3 +96,8 @@ Thank you for your interest in contributing to this project!
 ## License
 
 Tynamo Pscan is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information.
+
+
+## References
+- [Working with scans in DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Scan.html)
+- [Scan vs Parallel Scan in AWS DynamoDB?](https://stackoverflow.com/questions/41268702/scan-vs-parallel-scan-in-aws-dynamodb)

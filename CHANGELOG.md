@@ -4,6 +4,12 @@
 
 ### Patch Changes
 
+- Upating Readme
+
+## 0.1.1
+
+### Patch Changes
+
 - auto npm release
 - Updated dependencies
   - tynamo-pscan@0.1.1
